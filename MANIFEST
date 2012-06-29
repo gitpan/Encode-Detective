@@ -2,14 +2,10 @@ Makefile.PL
 Detective.xs
 include/nscore.h
 include/prmem.h
-lib/Encode/Detect.pm
-lib/Encode/Detect/Detector.pm
 lib/Encode/Detective.pm
 LICENSE
 MANIFEST
 MANIFEST.SKIP
-META.json
-META.yml
 pm_to_blib
 run-detector.cpp
 run-detector.h
@@ -64,3 +60,5 @@ src/nsUTF8Prober.cpp
 src/nsUTF8Prober.h
 t/base.t
 typemap
+META.yml                                 Module YAML meta-data (added by MakeMaker)
+META.json                                Module JSON meta-data (added by MakeMaker)

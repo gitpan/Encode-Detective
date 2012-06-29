@@ -37,5 +37,13 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.01"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/benkasminbullock/Encode-Detective/issues"
+      },
+      "repository" : {
+         "url" : "https://github.com/benkasminbullock/Encode-Detective"
+      }
+   },
+   "version" : "0.02"
 }
