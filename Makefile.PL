@@ -13,7 +13,7 @@ WriteMakefile (
     VERSION_FROM => $pm,
     ABSTRACT_FROM => $pm,
     LICENSE => 'mozilla',
-    AUTHOR => 'buggles',
+    AUTHOR => 'Ben Bullock <bkb@cpan.org>',
     OBJECT => "Detective.o @o_files",
     INC => "-I include -I src",
     LIBS => ['-lstdc++'],
