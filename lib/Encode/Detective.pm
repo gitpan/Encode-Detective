@@ -43,7 +43,7 @@ use strict;
 use warnings;
 
 use XSLoader;
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 XSLoader::load 'Encode::Detective', $VERSION;
 
 1;
@@ -75,6 +75,63 @@ L<Encode::Guess>, but does not require a list of expected encodings.
 Given a set of bytes, C<$data>, this looks at the bytes, and guesses
 what encoding they are encoded in using probabilities.
 
+=head1 DETECTED ENCODINGS
+
+The following encodings are detected:
+
+=over
+
+=item UTF-8
+
+=item EUC-JP
+
+=item Big5
+
+=item Shift_JIS
+
+=item EUC-KR
+
+=item EUC-TW
+
+Taiwanese encoding.
+
+=item windows-1251
+
+Cyrillic encoding.
+
+=item windows-1255
+
+Hebrew encoding.
+
+=back
+
+Character sets not detected
+
+=over
+
+=item mac roman
+
+=item CP932
+
+An extension of Shift-JIS, more common in practice than actual
+Shift-JIS.
+
+=back
+
+=head1 TODO
+
+The module needs more tests. Please send example files
+
+=head1 BUGS
+
+=head2 TIS-620
+
+TIS-620 does not seem to be detected.
+
+=head2 Documentation of detection
+
+The documentation of detected encodings above is not complete.
+
 =head1 HISTORY
 
 This module is based on code of Firefox. When this module was created,
@@ -82,9 +139,25 @@ the C++ code for character set detection was available as a standalone
 library. Now the code cannot be used as a standalone library, so this
 has become a fork of the original Mozilla code.
 
-Encode::Detective is a fork of Encode::Detect. It removes almost all
-of the interface of Encode::Detect except the single function
-L</detect>.
+Encode::Detective is a fork of L<Encode::Detect>. It removes almost
+all of the interface of Encode::Detect except the single function
+L</detect>. This fork was released to CPAN to improve the compilation
+of the module on various systems.
+
+=head1 SEE ALSO
+
+=head2 edetect
+
+The L<edetect> standalone script can guess the encodings of files.
+
+=head2 Encode::Guess
+
+L<Encode::Guess> is a Perl module which does something similar to
+Encode::Detective.
+
+=head2 Encode::Detect
+
+The original version of this module.
 
 =head1 AUTHORS
 

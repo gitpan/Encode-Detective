@@ -1,4 +1,3 @@
-build.pl
 Detective.xs
 include/nscore.h
 include/prmem.h
@@ -9,6 +8,7 @@ MANIFEST
 MANIFEST.SKIP
 run-detector.cpp
 run-detector.h
+script/edetect
 src/Big5Freq.tab
 src/CharDistribution.cpp
 src/CharDistribution.h
@@ -58,7 +58,7 @@ src/nsUniversalDetector.cpp
 src/nsUniversalDetector.h
 src/nsUTF8Prober.cpp
 src/nsUTF8Prober.h
-t/base.t
+t/Encode-Detective.t
 typemap
 META.yml                                 Module YAML meta-data (added by MakeMaker)
 META.json                                Module JSON meta-data (added by MakeMaker)
