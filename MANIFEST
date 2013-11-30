@@ -1,11 +1,13 @@
+Changes
 Detective.xs
 include/nscore.h
 include/prmem.h
 lib/Encode/Detective.pm
 LICENSE
 Makefile.PL
-MANIFEST
+MANIFEST			This list of files
 MANIFEST.SKIP
+README
 run-detector.cpp
 run-detector.h
 script/edetect
