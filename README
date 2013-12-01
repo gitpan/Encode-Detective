@@ -12,7 +12,7 @@
                                            
 
 
-This is the README for Encode::Detective version 0.05.
+This is the README for Encode::Detective version 0.06.
 
 Encode::Detective is a "module" for the Perl computer programming language, a
 library of computer code to install on a computer.  This document contains four
@@ -92,6 +92,6 @@ repository on github at
 
 -----------------------------------------------------------------------------
 
-This README was written on Sat Nov 30 13:00:31 2013.
+This README was written on Sat Nov 30 13:01:12 2013.
 
 -----------------------------------------------------------------------------

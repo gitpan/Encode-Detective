@@ -1,5 +1,9 @@
 Revision history for perl module Encode::Detective
 
+0.06 2013-12-02
+
+* Test miscount bug
+
 0.05 2013-11-30
 
 * Documentation rewrites.

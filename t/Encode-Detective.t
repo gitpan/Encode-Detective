@@ -15,7 +15,7 @@ is (detect("j\xc2\x92aimerais"), "UTF-8", 'detect UTF-8');
 SKIP: {
     my $is_author = -d "$FindBin::Bin/../.git";
     my $reason = 'regression test';
-    skip $reason, 7 unless $is_author;
+    skip $reason, 9 unless $is_author;
     note ("Regression tests");
     read_file ('kanjidic', 'EUC-JP');
     read_file ('big5-sample', 'Big5');
